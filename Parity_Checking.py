@@ -1,13 +1,14 @@
-try : 
+try:
     data = int(input("Enter data : "))
-    print("Actual Data = ",data)
+    print("Actual Data = ", data)
 
-    if(type(data) is int) :
+    if type(data) is int:
+
         def dec_bin(data):
             data = bin(data)
             data = str(data)
-            data = str.split(data,"b")[1]
-            return data 
+            data = str.split(data, "b")[1]
+            return data
 
         data = dec_bin(data)
 
@@ -18,11 +19,11 @@ try :
             print(updated_even_data)
             ones_count = 0
             for i in updated_even_data:
-                if(i=="1"):
+                if i == "1":
                     ones_count += 1
-            if(ones_count % 2 == 0):
+            if ones_count % 2 == 0:
                 print("Even Parity : NO ERROR")
-            else :
+            else:
                 print("Even Parity : ERROR")
 
         def odd_parity(data):
@@ -30,18 +31,18 @@ try :
             print(updated_odd_data)
             ones_count = 0
             for i in updated_odd_data:
-                if(i=="1"):
+                if i == "1":
                     ones_count += 1
-            if(ones_count % 2 != 0):
+            if ones_count % 2 != 0:
                 print("Odd Parity : NO ERROR")
-            else :
+            else:
                 print("Odd parity : ERROR")
-            
+
         even_parity(data)
         odd_parity(data)
 
-    else :
+    else:
         print("Exception : Not an Integer")
 
-except Exception :
+except Exception:
     print("Exception : Not an Integer Value")
