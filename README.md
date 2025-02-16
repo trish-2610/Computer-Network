@@ -246,3 +246,4 @@ Error
 
 ## Conclusion:
 This project demonstrated the implementation of Parity Checking and Checksum methods for error detection, providing insights into their practical applications and limitations. 
+
